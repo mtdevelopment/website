@@ -19,4 +19,4 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-s3cmd sync --config ~/.s3cfg-omt --exclude 'scripts/*' --exclude '.git/*' ../ s3://omt.tech/
+s3cmd sync --config ~/.s3cfg-omt --exclude 'scripts/*' --exclude '.git/*' . s3://omt.tech/
