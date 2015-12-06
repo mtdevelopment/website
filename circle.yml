@@ -1,0 +1,13 @@
+machine:
+    environment:
+        DEPLOY_BUCKET: omt.tech
+test:
+    override:
+    - echo "no tests for a dumdum site"
+
+
+deployment:
+  production:
+    branch: master
+    commands:
+        - /bin/bash scripts/push.sh
